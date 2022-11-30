@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMG/Marvela-logos.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>cart - Marvela</title>
+</head>
+<style>
+
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container i{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img{
+    width: 75px;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+</style>
+<body>
+
+  <section class="header" id="header">
+    <a class="logo" href="index.html">Furniture</a>
+    <div class="navbar">
+        <ul id="navBar">
+            <li><a class="active" href="index.html">Trang chủ</a></li>
+            <li><a href="men.html">Bàn</a></li>
+            <li><a href="women.html">Sofa</a></li>
+            <li><a href="blog.html">Đèn</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li class="logout-bag" id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"><span>0</span></i></a></li>
+            <a href="#" id="close"> <i class="far fa-times"></i> </a>
+        </ul>
+    </div>
+    <div class="mobile" id="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"> </i><span>0</span></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+
+    <section class="page-header cart-header" >
+        <h2>Cart</h2>
+        <p>Contact Us to solve all of your doubts and queries </p>
+    </section>
+
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <a class="logo" href="#">Marvela</a>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>  13, Queens Storey, Central Perk</p>
+            <p><strong>Phone:</strong> 7453-344-122 / 133</p>
+            <p><strong>Hours:</strong> 09:00 - 21:00, Everyday</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                   <i class="fab fa-facebook-f "></i>
+                   <i class="fab fa-pinterest-p "></i>
+                   <i class="fab fa-twitter "></i>
+                   <i class="fab fa-instagram "></i>
+                   <i class="fab fa-youtube "></i>
+                </div>
+            </div>
+        </div>
+        <div class="col1">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col1">
+            <h4>My Account</h4>
+            <a href="#">Sign In </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col1 install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="img/app1.jpg" alt="#" width="220px" height="60px">
+                <img src="img/play1.jpg" alt="#" width="220px" height="60px">
+            </div>
+            <p>Secured Paymnet Getaway</p>
+            <img src="img/pay.png" alt="#" width="300px" height="60px">
+        </div>
+        <div class="copyright">
+            <p>&copy; Marvela! Shoppers Assemble - All Rights Reserved!!</p>
+        </div>
+    </footer>
+
+    <script src="main1.js"></script>
+</body>
+
+</html>
